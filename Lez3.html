@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lezione 3: Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+	<link href="Lez3.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Navigation</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Bootstrap</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Row/Column</a>
+				</li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Form
+				</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">First Name</a></li>
+					<li><a class="dropdown-item" href="#">Last Name</a></li>
+					<li><a class="dropdown-item" href="#">Boh</a></li>
+				</ul>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	<h1>Lezione 3: Bootstrap</h1>
+	<div class="container-fluid">
+		<h2>Es 1: Bootstrap</h2>
+		<div class="row">
+			<div class="col-md-6">
+				Riga lunga 6 colonne
+			</div>
+			<div class="col-md-4">
+				Riga lunga 4 colonne
+			</div>
+			<div class="col-md-2">
+				Riga lunga 2 colonne
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				Riga lunga 3 colonne
+			</div>
+			<div class="col-md-5">
+				Riga lunga 5 colonne
+			</div>
+			<div class="col-md-4">
+				Riga lunga 4 colonne
+			</div>
+		</div>
+	</div><br>
+	<div class="container-fluid">
+		<h2>Esercizio 2: Row/Column</h2>
+		<div class="row">
+			<div class="col-md-4">
+				Spazio a sx
+			</div>
+			<div class="col-md">
+				<div class="row">
+					<div class="col-md-6">
+						Spazio sx a sinistra
+					</div>
+					<div class="col-md">
+						Spazio sx a destra
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md">
+						Seconda riga a dx
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md">
+						Terza riga a dx
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><br>
+	<div class="container-fluid">
+		<h2>Esercizio 3: Form</h2>
+		<div class="row">
+			<div class="col-md">
+				Menù di navigazione
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md">
+				<form>
+					<div class="mb-3">
+					  <label for="exampleInputEmail1" class="form-label">Email address</label>
+					  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Lmao dai inserisci la mail" aria-describedby="emailHelp">
+					  <div id="emailHelp" class="form-text">We'll obviously share your email with everyone else.</div>
+					</div>
+					<div class="mb-3">
+					  <label for="exampleInputPassword1" class="form-label">Password</label>
+					  <input type="password" class="form-control" placeholder="Metti sta password su daiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" id="exampleInputPassword1">
+					</div>
+					<div class="mb-3 form-check">
+					  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div><br>
+	<div class="container-fluid">
+		<h2>Esercizio 4: Form di Registrazione</h2>
+		<div class="row">
+			<div class="col-md">
+				Menù di navigazione
+			</div>
+		</div>
+		<div class="row">
+			<form>
+				<div class="row">
+					<div class="input-group">
+						<input type="text" aria-label="First name" placeholder="First Name" class="form-control">
+						<input type="text" aria-label="Last name" placeholder="Last Name" class="form-control">
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+						<span class="input-group-text" id="basic-addon2">@example.com</span>
+					</div> 
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<input type="number" id="inputPassword5" class="form-control" placeholder="CAP" aria-labelledby="passwordHelpBlock">
+					</div>
+					<div class="col-md-4">
+						<input type="text" id="inputPassword5" class="form-control" placeholder="Provincia" aria-labelledby="passwordHelpBlock">
+					</div>
+					<div class="col-md">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>Stato</option>
+							<option value="1">Italia</option>
+							<option value="2">Francia</option>
+							<option value="3">Spagna</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md">
+						<input type="text" placeholder="Bio">
+					</div>
+				</div>
+				<div class="row">
+					<input type="file">
+				</div>
+				<button type="button" class="btn btn-primary">Send</button>
+			</form>
+		</div>
+	</div><br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
